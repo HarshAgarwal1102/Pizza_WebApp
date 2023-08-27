@@ -1,1 +1,1 @@
-export const URL = 'http://127.0.0.1:5500/server.json';
+export const URL = 'https://raw.githubusercontent.com/HarshAgarwal1102/JavaScript_FullStack/main/pizza.json';
