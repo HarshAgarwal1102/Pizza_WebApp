@@ -33,6 +33,7 @@ function printBasket(){
     totalGSTPTag.innerText = `Total after applicable GST is ${afterGST.toFixed(2)}`;
     basketDiv.appendChild(totalGSTPTag);
 }
+
 function printItem(pizza){
     const pTag = document.createElement('p');
     pTag.innerText = `Pizza Name : ${pizza.name} Price : ${pizza.price}`;

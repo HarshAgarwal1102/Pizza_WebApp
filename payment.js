@@ -1,11 +1,8 @@
-
-
-
 var options = {
-    "key": "rzp_test_9TO14DgPoIsohI", // Enter the Key ID generated from the Dashboard
+    "key": "rzp_test_xaSwTQu02Kyx0i", // Enter the Key ID generated from the Dashboard
     "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     "currency": "INR",
-    "name": "Pizza Shop", //your business name
+    "name": "Pizza Hut", //your business name
     "description": "Pizza Shop Transaction",
     "image": "https://example.com/your_logo",
     
@@ -38,6 +35,8 @@ rzp1.on('payment.failed', function (response){
         alert(response.error.metadata.order_id);
         alert(response.error.metadata.payment_id);
 });
+
+// document.getElementById('rzp-button1').onclick = function(e){
 document.getElementById('rzp-button1').addEventListener('click', function(){
     rzp1.open();
     e.preventDefault();

@@ -2,7 +2,7 @@ import makeNetworkCall from './api-client.js';
 import {URL} from './config.js';
 import Pizza from './pizza-model.js';
 
- const pizzaOperations = {
+const pizzaOperations = {
     pizzas:[],
     searchPizza(pizzaid){
         const pizzaObject = this.pizzas.find((pizza)=>pizza.id == pizzaid);
