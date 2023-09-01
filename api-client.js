@@ -9,7 +9,7 @@
     try{
     const response = await fetch(URL);
     const data = await response.json();
-    console.log('Data is ', data);
+    // console.log('Data is ', data);
     return data;
     }
     catch(err){
