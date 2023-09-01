@@ -1,6 +1,6 @@
 var options = {
     "key": "rzp_test_xaSwTQu02Kyx0i", // Enter the Key ID generated from the Dashboard
-    "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    "amount": '50000', // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     "currency": "INR",
     "name": "Pizza Hut", //your business name
     "description": "Pizza Shop Transaction",
@@ -24,7 +24,9 @@ var options = {
         "color": "#3399cc"
     }
 };
+
 var rzp1 = new Razorpay(options);
+
 rzp1.on('payment.failed', function (response){
     alert("Payment Fail");    
     alert(response.error.code);
@@ -37,7 +39,8 @@ rzp1.on('payment.failed', function (response){
 });
 
 // document.getElementById('rzp-button1').onclick = function(e){
-document.getElementById('rzp-button1').addEventListener('click', function(){
+    var btn = document.getElementById('rzp-button1');
+    btn.addEventListener('click', function(){  
     rzp1.open();
     e.preventDefault();
 });
