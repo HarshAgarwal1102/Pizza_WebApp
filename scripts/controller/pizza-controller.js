@@ -54,7 +54,6 @@ function printBasket() {
     totalGSTPTag.innerText = `Amount Payable  ₹${afterGST.toFixed(2)}`;    // totalValue (afterGST);
 
 
-
     totalGSTPTag.style = "color:green";
     amountAdd.appendChild(totalGSTPTag);
 
@@ -94,8 +93,8 @@ function createCard(pizza) {
     /*
       <div class="col-4">
   
-                  </div>
-      */
+      </div>
+    */
     const colDiv = document.createElement("div");
     colDiv.className = "col-4";
     const cardDiv = document.createElement("div");
@@ -127,7 +126,7 @@ function createCard(pizza) {
     colDiv.appendChild(cardDiv);
     return colDiv;
 
-    /*
+/*
   <div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
@@ -136,5 +135,5 @@ function createCard(pizza) {
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
-  */
+*/
 }
