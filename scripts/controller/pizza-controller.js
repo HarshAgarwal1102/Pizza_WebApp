@@ -77,6 +77,7 @@ var show = printBasket();
 function printItem(pizza) {
     const pTag = document.createElement("p");
     pTag.innerText = `${pizza.name} ₹${pizza.price}`;
+    pTag.style="color:#6f42c1";
     return pTag;
 }
 
